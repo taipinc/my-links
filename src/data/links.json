@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "name": "Shabtai Pinchevsky",
+    "bio": "Assistant Professor of Photography | Artist",
+    "avatar": "/avatar.png"
+  },
+  "links": [
+    {
+      "title": "Portfolio",
+      "url": "https://yoursite.com",
+      "thumbnail": "/thumbnails/portfolio.png"
+    },
+    {
+      "title": "Can a Self Driving Car Navigate an Apartheid Road?",
+      "url": "https://yourarchive.com",
+      "thumbnail": "/thumbnails/archive.png"
+    },
+    {
+      "title": "Teaching",
+      "url": "https://parsons.edu",
+      "icon": "📚"
+    },
+    {
+      "title": "Contact",
+      "url": "mailto:your@email.com",
+      "icon": "✉️"
+    }
+  ]
+}
