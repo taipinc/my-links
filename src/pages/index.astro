@@ -1,6 +1,16 @@
 ---
 import linksData from '../data/links.json';
 const { profile, pinnedLinks, links } = linksData;
+
+// Helper function to handle base path for local images
+const getImageUrl = (url: string) => {
+  if (!url) return url;
+  // If it's a local path (starts with /), prepend base URL
+  if (url.startsWith('/') && !url.startsWith('//')) {
+    return import.meta.env.BASE_URL + url.slice(1);
+  }
+  return url;
+};
 ---
 
 <html lang="en">
@@ -14,7 +24,7 @@ const { profile, pinnedLinks, links } = linksData;
     <div class="container">
       <header>
         {profile.avatar && (
-          <img src={profile.avatar} alt={profile.name} class="avatar" />
+          <img src={getImageUrl(profile.avatar)} alt={profile.name} class="avatar" />
         )}
         <h1>{profile.name}</h1>
         <p class="bio" set:html={profile.bio}></p>
@@ -31,7 +41,7 @@ const { profile, pinnedLinks, links } = linksData;
               </>
             ) : link.style === 'image-caption' ? (
               <>
-                <img src={link.thumbnail} alt={link.title} class="content-image" />
+                <img src={getImageUrl(link.thumbnail)} alt={link.title} class="content-image" />
                 <div class="caption-area">
                   <span class="content-title" set:html={link.title}></span>
                   {link.caption && <span class="content-caption" set:html={link.caption}></span>}
@@ -39,13 +49,13 @@ const { profile, pinnedLinks, links } = linksData;
               </>
             ) : link.style === 'image-fill' ? (
               <>
-                <img src={link.thumbnail} alt={link.title} class="fill-image" />
+                <img src={getImageUrl(link.thumbnail)} alt={link.title} class="fill-image" />
                 <span class="overlay-title" set:html={link.title}></span>
               </>
             ) : (
               <>
                 {link.thumbnail ? (
-                  <img src={link.thumbnail} alt={link.title} class="thumbnail" />
+                  <img src={getImageUrl(link.thumbnail)} alt={link.title} class="thumbnail" />
                 ) : link.circleColor ? (
                   <div class="circle-icon" style={`background-color: ${link.circleColor}`}></div>
                 ) : link.materialIcon ? (
@@ -72,7 +82,7 @@ const { profile, pinnedLinks, links } = linksData;
               </>
             ) : link.style === 'image-caption' ? (
               <>
-                <img src={link.thumbnail} alt={link.title} class="content-image" />
+                <img src={getImageUrl(link.thumbnail)} alt={link.title} class="content-image" />
                 <div class="caption-area">
                   <span class="content-title" set:html={link.title}></span>
                   {link.caption && <span class="content-caption" set:html={link.caption}></span>}
@@ -80,13 +90,13 @@ const { profile, pinnedLinks, links } = linksData;
               </>
             ) : link.style === 'image-fill' ? (
               <>
-                <img src={link.thumbnail} alt={link.title} class="fill-image" />
+                <img src={getImageUrl(link.thumbnail)} alt={link.title} class="fill-image" />
                 <span class="overlay-title" set:html={link.title}></span>
               </>
             ) : (
               <>
                 {link.thumbnail ? (
-                  <img src={link.thumbnail} alt={link.title} class="thumbnail" />
+                  <img src={getImageUrl(link.thumbnail)} alt={link.title} class="thumbnail" />
                 ) : link.circleColor ? (
                   <div class="circle-icon" style={`background-color: ${link.circleColor}`}></div>
                 ) : link.materialIcon ? (
