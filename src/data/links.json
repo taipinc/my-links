@@ -1,29 +1,72 @@
 {
-  "profile": {
-    "name": "Shabtai Pinchevsky",
-    "bio": "Assistant Professor of Photography | Artist",
-    "avatar": "/avatar.png"
-  },
-  "links": [
-    {
-      "title": "Portfolio",
-      "url": "https://yoursite.com",
-      "thumbnail": "/thumbnails/portfolio.png"
-    },
-    {
-      "title": "Can a Self Driving Car Navigate an Apartheid Road?",
-      "url": "https://yourarchive.com",
-      "thumbnail": "/thumbnails/archive.png"
-    },
-    {
-      "title": "Teaching",
-      "url": "https://parsons.edu",
-      "icon": "📚"
-    },
-    {
-      "title": "Contact",
-      "url": "mailto:your@email.com",
-      "icon": "✉️"
-    }
-  ]
+	"profile": {
+		"name": "Shabtai Pinchevsky",
+		"bio": "Photographer and Digital Media Artist",
+		"subtitle": "Assistant Professor of Photography, Parsons School of Design",
+		"avatar": "/avatar.png"
+	},
+	"pinnedLinks": [
+		{
+			"title": "Website",
+			"url": "https://taishabtai.com",
+			"thumbnail": "/thumbnails/duplicating-palestine-img.jpg",
+			"layout": "tiny-box"
+		},
+		{
+			"title": "Contact",
+			"url": "mailto:tai.shabtai@email.com",
+			"materialIcon": "alternate_email",
+			"layout": "icon-box"
+		},
+
+		{
+			"title": "Instagram",
+			"url": "https://www.instagram.com/shabtaipinchevsky/",
+			"thumbnail": "https://cdn.simpleicons.org/instagram",
+			"layout": "icon-box"
+		},
+		{
+			"title": "Vimeo",
+			"url": "https://vimeo.com",
+			"thumbnail": "https://cdn.simpleicons.org/vimeo",
+			"layout": "icon-box"
+		}
+	],
+	"links": [
+		{
+			"title": "Mount Scopus Spatial Archive",
+			"url": "https://taishabtai.com/mount-scopus-spatial-archive",
+			"thumbnail": "/thumbnails/scopus.gif",
+			"layout": "small-box",
+			"style": "image-fill"
+		},
+        {
+            "title": "<i>Facing Photographic Acts (After Allan Sekula)</i>, by Noam Gal",
+            "url": "https://artjournal.collegeart.org/?p=19394",
+            "thumbnail": "/thumbnails/rcaj_a_2541545_uf0005_b.jpg",
+            "layout": "tall-box",
+            "style": "image-caption"
+        },
+		{
+			"title": "Can a Self Driving Car Navigate an Apartheid Road?",
+			"url": "https://taishabtai.com/can-a-self-driving-car-1",
+			"thumbnail": "/thumbnails/can-a-self.gif",
+			"layout": "big-box",
+			"style": "image-fill"
+		},
+		{
+			"title": "Teaching",
+			"url": "https://www.newschool.edu/parsons/faculty/shabtai-pinchevsky/",
+			"circleColor": "#E42A1D",
+			"layout": "small-box"
+		},
+		{
+			"title": "Anti-Mapping / <i>With Miki Kratsman</i>",
+			"url": "https://www.tamuseum.org.il/en/exhibition/miki-kratsman-and-shabtai-pinchevsky-anti-mapping/",
+            "thumbnail": "/thumbnails/al-Jammama_2.jpg",
+			"description": "\"The camera is an instrument that teaches people how to see without a camera.\" — Dorothea Lange",
+			"layout": "wide-box",
+			"style": "image-fill"
+		}
+		]
 }
