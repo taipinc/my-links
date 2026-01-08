@@ -27,7 +27,7 @@
 		},
 		{
 			"title": "Vimeo",
-			"url": "https://vimeo.com",
+			"url": "http://localhost:5173/video-library",
 			"thumbnail": "https://cdn.simpleicons.org/vimeo",
 			"layout": "icon-box"
 		}
