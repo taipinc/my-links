@@ -762,6 +762,34 @@ const getImageUrl = (url: string) => {
 		  margin-top: 0px;
 		  border-radius: 0;
         }
+
+        .links-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .link-item.row {
+          grid-column: span 4;
+        }
+
+        .link-item.small-box {
+          grid-column: span 2;
+        }
+
+        .link-item.tiny-box {
+          grid-column: span 2;
+        }
+
+        .link-item.tall-box {
+          grid-column: span 2;
+        }
+
+        .link-item.wide-box {
+          grid-column: span 4;
+        }
+
+        .link-item.big-box {
+          grid-column: span 4;
+        }
       }
     </style>
   </body>
